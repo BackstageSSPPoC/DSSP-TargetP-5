@@ -1,0 +1,40 @@
+# apiVersion: backstage.io/v1alpha1
+# kind: Component
+
+# metadata:
+#   name: DSSP-TargetP-5
+#   description: Service DSSP-TargetP-5
+
+#   annotations:
+#     github.com/project-slug: BackstageSSPPoC/DSSP-TargetP-5
+#     backstage.io/techdocs-ref: dir:.
+#     jenkins.io/job-full-name: Backstage_SSP_PoC/DSSP-TargetP-5/main
+#     argocd/app-name: dssp-targetp-5
+#     backstage.io/kubernetes-id: DSSP-TargetP-5
+#     backstage.io/kubernetes-namespace: default
+#     sonarqube.org/project-key: dssp-targetp-5
+
+# spec:
+#   type: service
+#   owner: development
+#   lifecycle: experimental
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+
+metadata:
+  name: DSSP-TargetP-5
+  description: Service DSSP-TargetP-5
+
+  annotations:
+    github.com/project-slug: BackstageSSPPoC/DSSP-TargetP-5
+    backstage.io/techdocs-ref: dir:.
+    jenkins.io/job-full-name: Backstage_SSP_PoC/DSSP-TargetP-5/qat
+    argocd/app-name: dssp-targetp-5-qat
+    backstage.io/kubernetes-id: DSSP-TargetP-5
+    sonarqube.org/project-key: dssp-targetp-5   # ← env se project key
+
+spec:
+  type: service
+  owner: development
+  lifecycle: experimental
